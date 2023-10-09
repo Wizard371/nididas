@@ -7,7 +7,7 @@
       <button @click="openModal" class="add-btn">Tilføj Sko</button>
       <AddShoeModal
         :isOpen="isModalOpen"
-        @close="closeModl"
+        @close="closeModal"
         @added="shoeAdded"
       ></AddShoeModal>
       <button v-if="role === 'admin'" @click="openAdminPanel">
